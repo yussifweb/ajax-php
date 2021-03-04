@@ -19,9 +19,6 @@ if (isset($_POST['id'])) {
     }
 
     while ($row = mysqli_fetch_array($query_car_info)) {
-
-
-
         echo "<input rel='" . $row['id'] . "' type='text' class='form-control title-input' value='" . $row['title'] . "'>";
         echo "<input type='button' class='btn btn-success update' value='Update'>";
         echo "<input type='button' class='btn btn-danger delete' value='Delete'>";
@@ -61,6 +58,7 @@ if (isset($_POST['deletethis'])) {
 
 
 ?>
+
 
 <script>
     $(document).ready(function() {
